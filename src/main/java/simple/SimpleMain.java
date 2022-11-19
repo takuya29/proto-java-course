@@ -1,11 +1,14 @@
 package simple;
 
+import com.example.options.AnotherDummy;
 import example.simple.SimpleOuterClass;
 
 import java.util.Arrays;
 
 public class SimpleMain {
     public static void main(String[] args) {
+        AnotherDummy message1 = AnotherDummy.newBuilder().build();
+
         SimpleOuterClass.Simple message = SimpleOuterClass.Simple.newBuilder()
                 .setId(42)
                 .setIsSimple(true)
